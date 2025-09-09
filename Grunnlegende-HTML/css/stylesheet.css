@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*Global header*/
+
+#mainlogo {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: #000000;
+  text-decoration: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+/*Hovedinnhold*/
+
+article{
+    margin: 1rem 0;
+    border:1px solid #efefef;
+    max-width: 400px;
+    width: 100%;
+    min-width: 250px;   
+    padding: 1rem;
+
+    img{
+        width: 100%;
+    }
+}
+.btn{
+    display: inline-block;
+    background-color: #6e0d04;
+    color: #fff;
+    padding: 1rem;
+}
