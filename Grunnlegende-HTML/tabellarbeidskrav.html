@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kravoversikt</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+    table { width: 100%; border-collapse: collapse; }
+    caption { text-align: left; font-weight: 700; margin-bottom: .5rem; }
+    thead th { background: #f3f4f6; }
+    th, td { padding: .75rem; border: 1px solid #e5e7eb; vertical-align: top; }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    .badge { display: inline-block; padding: .15rem .5rem; border-radius: .5rem; font-size: .85rem; font-weight: 600; }
+    .hoy { background: #fee2e2; color: #991b1b; }      /* Høy prioritet */
+    .middels { background: #fffbeb; color: #92400e; }  /* Middels prioritet */
+  </style>
+</head>
+<body>
+  <table>
+    <h1>Kravoversikt for appen</h1>
+    <thead>
+      <tr>
+        <th style="width: 16ch;">Kategori</th>
+        <th style="width: 22ch;">Krav</th>
+        <th>Beskrivelse</th>
+        <th style="width: 16ch;">Prioritet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Funksjonelle krav -->
+      <tr>
+        <td>Funksjonelle krav</td>
+        <td>Startside med meny</td>
+        <td>Startside som gir oversikt og rask tilgang til hovedfunksjoner via meny.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Funksjonelle krav</td>
+        <td>Navigasjon i appen</td>
+        <td>Mulighet til å navigere seg til andre deler av appen.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Funksjonelle krav</td>
+        <td>Lenker til viktige sider</td>
+        <td>Synlige og lett tilgjengelige lenker til sentrale sider/funksjoner.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+
+      <!-- Tekniske krav -->
+      <tr>
+        <td>Tekniske krav</td>
+        <td>Støtte iOS og Android</td>
+        <td>Appen skal fungere på både iOS- og Android-plattformer.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Tekniske krav</td>
+        <td>Støtte telefoner og nettbrett</td>
+        <td>Responsivt design tilpasset ulike skjermstørrelser.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Tekniske krav</td>
+        <td>Sikkerhet mot sabotasje</td>
+        <td>Sikkerhetssystem som beskytter mot sabotasje og misbruk.</td>
+        <td><span class="badge middels">Middels prioritet</span></td>
+      </tr>
+
+      <!-- Designkrav -->
+      <tr>
+        <td>Designkrav</td>
+        <td>Affordance</td>
+        <td>Brukeren skal se hva som er klikkbart, og knapper skal ha tydelig sammenheng med sin funksjon.</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Designkrav</td>
+        <td>Tilbakemelding</td>
+        <td>Tydelige feilmeldinger og bekreftelser ved viktige handlinger.</td>
+        <td><span class="badge middels">Middels prioritet</span></td>
+      </tr>
+      <tr>
+        <td>Designkrav</td>
+        <td>Kontinuitet</td>
+        <td>Alle elementer skal være logisk plassert, og brukeren skal enkelt forstå hvordan man navigerer frem og tilbake (f.eks. via knapper).</td>
+        <td><span class="badge hoy">Høy prioritet</span></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
