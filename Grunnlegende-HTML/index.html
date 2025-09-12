@@ -17,14 +17,15 @@
         </ul>
       </nav>
     </header>
-    <section>
+    <section class="deal-section">
+
       <h2>Crazy Gaming Deals</h2>
-      <img src="https://picsum.photos/seed/picsum/200/300" alt="Et bilde av fjell og snø">
+      <!--<img src="https://picsum.photos/seed/picsum/200/300" alt="Et bilde av fjell og snø">-->
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      <a href="offers.html">Se tilbud</a>
+      <a href="offers.html" class="btn">Se tilbud</a>
     </section>
     <main>
-      <section class="deal-section">
+      <section>
         <h2>Populære Spæll</h2>
 
         <article>
@@ -33,7 +34,7 @@
           <h3>Red Dead Redemption</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           <p>499,-</p>
-          <a href="product.html" class="btn">Se produkt</a>
+          <a class="btn" href="product.html">Se produkt</a>
         </article>
 
       <article>
@@ -80,16 +81,18 @@
         </article>
       </section>
     </main>
-    <aside>
+    <aside class="side-container">
       <h4>Meld deg inn i spællklubben</h4>
       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       <form>
         <label>E-post:</label>
         <input type="email" placeholder="ola.nordmann.hiof.no....">
         <input type="submit" value="Meld meg på">
-        <label>Bekreft at du er over 18 år</label>
-        <input type="checkbox">
+        <label class="age-check" for="Bekreft at du er over 18 år">Over 18
+        <input type="checkbox" id="age-validation" required>
+        </label>
       </form>
     </aside>
+    <footer>&copy; Webutvikling 2025</footer>
   </body>
 </html>

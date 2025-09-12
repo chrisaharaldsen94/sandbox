@@ -1,6 +1,9 @@
 :root{
-    --basic-yellow: #fcfc09;
-    --basic-red: #6a0404; 
+    --basic-grey: #efefef;
+    --basic-red: #b0b0b0; 
+}
+*{
+   box-sizing: border-box;
 }
 
 
@@ -15,9 +18,9 @@ body{
     
 }
 /*Global header*/
-#global-header {
+#global-header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
     nav{ 
@@ -27,11 +30,8 @@ body{
 
             li{
                 list-style: none;
-                text-align: left;
-                font-size: bold;
-                font-family: Arial, Helvetica, sans-serif;
                 display: inline-block;
-                padding: 1px;
+                margin: 5px;
             }
         }
     }
@@ -41,7 +41,7 @@ body{
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
-  color: #d90e1f;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -49,12 +49,39 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 /* Hero-section*/
 .deal-section{
-    background-color:var(--basic-yellow);
+    background-image: url(https://picsum.photos/seed/picsum/500/500);
+    background-color: var(--basic-grey);
     padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; 
+    position: relative;
+    height: 50vh;
+    min-height: 100px;
 }
+
+
 /*Hovedinnhold*/
+
+main{
+    max-width: 1200px;
+    width:100%;
+    margin: 1rem auto;
+
+    section {
+        h2{
+            text-align: center;
+        }
+        article{
+            margin: 0 auto;
+        }
+    }
+}
+
+
 
 article{
     margin: 1rem 0;
@@ -68,9 +95,35 @@ article{
         width: 100%;
     }
 }
-.btn{
+.btn {
     display: inline-block;
-    background-color: #6e0d04;
+    background-color: #000000;
     color: #fff;
     padding: 1rem;
+    border: none;
+}
+.side-container {
+    background: var(--basic-grey);
+    padding: 1rem;
+
+    form{
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem;
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer{
+    background-color: #212324;
+    color: #fff;
+    padding: 1rem;
+    min-height: 75px;
 }
