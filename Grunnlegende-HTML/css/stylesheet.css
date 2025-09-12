@@ -1,20 +1,58 @@
+:root{
+    --basic-yellow: #fcfc09;
+    --basic-red: #6a0404; 
+}
+
+
+
+
+
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
     
 }
 /*Global header*/
+#global-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    nav{ 
+        ul{
+            padding: 0;
+            margin:0;
+
+            li{
+                list-style: none;
+                text-align: left;
+                font-size: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                display: inline-block;
+                padding: 1px;
+            }
+        }
+    }
+}
 
 #mainlogo {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
-  color: #000000;
+  color: #d90e1f;
   text-decoration: none;
 }
 
 a {
     color: #000;
     text-decoration: none;
+}
+/* Hero-section*/
+.deal-section{
+    background-color:var(--basic-yellow);
+    padding: 1rem;
 }
 /*Hovedinnhold*/
 
