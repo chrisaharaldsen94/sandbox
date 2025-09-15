@@ -17,12 +17,33 @@ body{
     margin:0;
     
 }
+
+#page-container{
+    display: grid;
+   /* grid-template-areas: "header"
+                         "hero" 
+                         "main" 
+                         "aside" 
+                         "footer";*/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+
 /*Global header*/
 #global-header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    /*grid-area: header;*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+
     nav{ 
         ul{
             padding: 0;
@@ -61,8 +82,13 @@ a {
     position: relative;
     height: 50vh;
     min-height: 100px;
-}
 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
 /*Hovedinnhold*/
 
@@ -70,6 +96,12 @@ main{
     max-width: 1200px;
     width:100%;
     margin: 1rem auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 3;
+    grid-row-end: 4;
+   
 
     section {
         h2{
@@ -105,6 +137,12 @@ article{
 .side-container {
     background: var(--basic-grey);
     padding: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 4;
+    grid-row-end: 5;
+    
 
     form{
         input{
@@ -126,4 +164,45 @@ footer{
     color: #fff;
     padding: 1rem;
     min-height: 75px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    grid-row-start: 5;
+    grid-row-end: 6;
+    
+}
+@media only screen and (min-width: 600px){
+    
+    #page-container{
+        grid-template-columns: 1fr 1 fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        /*grid-template-areas: "header header header"
+                             "hero hero hero"
+                             "main main aside" 
+                             "footer footer footer";
+
+        grid-template-columns: 1fr 1fr 0.5fr;*/
+    }
+
+#global-header{
+    grid-column-end: 4;
+}
+.deal-section{
+    grid-column-end: 4;
+}
+main{
+    grid-column-end: 3;
+}
+.side-container{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+footer{
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 }
