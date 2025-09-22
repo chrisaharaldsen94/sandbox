@@ -1,0 +1,105 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      background: url('https://picsum.photos/1200/300?grayscale') no-repeat center center;
+      background-size: cover;
+      color: black;
+      padding: 10px 20px;
+    }
+
+    header .logo {
+      font-weight: bold;
+    }
+
+    nav {
+      background: #fff;
+      padding: 5px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 16px;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #ddd;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      border: 1px solid #000;
+      padding: 20px;
+      min-height: 120px;
+    }
+
+    .resources ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .resources button {
+      background: #f2a900;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-left {
+      font-size: 14px;
+    }
+
+    .footer-right {
+      background: #fff;
+      color: black;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+    }
+
+    .footer-right input, 
+    .footer-right textarea {
+      margin-bottom: 10px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .footer-right button {
+      background: #f2a900;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/losning.css">
+  <title>Nettside Mal</title>
+ 
+</head>
+<body>
+  <header>
+    <h1>Labøvelse</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Hjem</a></li>
+      <li><a href="#">Nettside mal</a></li>
+      <li><a href="#">Labøvelse</a></li>
+      <li><a href="#">Kontakt oss</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article>Labøvelse</article>
+    <article>Kontakt oss</article>
+    <article>Mal</article>
+
+    <aside>
+      <h2>Semantisk HTML</h2>
+      <ul>
+        <li>web.dev - Semantic HTML</li>
+        <li>W3 schools - HTML Semantic Elements</li>
+        <li>Semrush - What Is Semantic HTML?</li>
+        <li>Codecademy - What is Semantic HTML & Why Is It Important for Accessibility?</li>
+        <li>Geeks for Geeks - HTML5 Semantics</li>
+      </ul>
+      <p><strong>Oversikt over SERP søk fra Google om semantisk HTML</strong></p>
+      <button>HTML SERP</button>
+    </aside>
+  </main>
+
+  <footer>
+    <address>
+     Chris Haraldsen<br>
+      chrisanh@hiof.no
+    </address>
+
+    <form>
+      <label for="name">Navn:</label>
+      <input id="name" type="text" placeholder="chris...">
+
+      <label for="email">E-post:</label>
+      <input id="email" type="email" value="chrisanh@hiof.no">
+
+      <label for="subject">Emne:</label>
+      <input id="subject" type="text" placeholder="Spm om HTML?">
+
+      <label for="message">Melding:</label>
+      <textarea id="message"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </footer>
+</body>
+</html>
