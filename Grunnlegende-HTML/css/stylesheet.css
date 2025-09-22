@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Tektur:wght@400..900&display=swap');
 :root{
     --basic-grey: #efefef;
     --basic-red: #ac0e0e; 
@@ -13,7 +14,7 @@
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Funnel Sans", sans-serif;
     margin:0;
     
 }
@@ -57,7 +58,9 @@ body{
         }
     }
 }
-
+.fa-burger{
+    display: inline-block   ;
+}
 #mainlogo {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -118,15 +121,33 @@ main{
 article{
     margin: 1rem 0;
     border:1px solid #efefef;
-    max-width: 400px;
-    width: 100%;
+    width: 31%;
     min-width: 250px;   
     padding: 1rem;
+    flex-grow: 1;
+    max-width: 800px;
 
-    img{
-        width: 100%;
-    }
 }
+
+
+
+.category-card{
+    width: 33%;
+    flex-grow: 1;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
+}
+   article img{
+        width: 100%;
+        height: auto;
+    }
+
 .btn {
     display: inline-block;
     background-color: #000000;
@@ -186,11 +207,38 @@ footer{
 #global-header{
     grid-column-end: 4;
 }
+.fa-burger{
+    display: none;
+}
 .deal-section{
     grid-column-end: 4;
 }
 main{
     grid-column-end: 3;
+}
+article{
+    margin: 1rem 0;
+    border:1px solid #efefef;
+    width: 31%;
+    min-width: 250px;   
+    padding: 1rem;
+    flex-grow: 1;
+    max-width: 800px;
+
+}
+
+
+
+.category-card{
+    width: 33%;
+    flex-grow: 0;
+}
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
 }
 .side-container{
     grid-column-start: 3;
@@ -212,8 +260,8 @@ footer{
     gap: 0.5rem;
     justify-content: center;
     
-
-    h2{
+}
+    .flex-container h2{
         width: 100%;
         margin: 0;
 
@@ -225,12 +273,16 @@ footer{
         margin: 0;
         flex-grow: 1;
     }
+.flex-container article{
+    min-width: 200px !important;
+    margin: 0;
 }
+
 
 section.flex-grow{
     justify-content: flex-start;
-
-    article{
+}
+  /*  article{
         max-width: 900px;
         min-width: 100px;
         width: 33%;
@@ -246,4 +298,11 @@ section.flex-grow{
 
 .grow-2{
     flex-grow: 3;
+}
+*/
+
+.fa-burger{
+    font-size: 30px;
+    color:#890e0e;
+    font-weight: 600;
 }
